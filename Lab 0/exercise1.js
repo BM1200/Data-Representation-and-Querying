@@ -12,3 +12,14 @@ const myFunction = function SayHi(){
 }
 
 myFunction();
+
+const myNewFunction = function(){
+    console.log("Bonjour");
+}
+
+myNewFunction();
+
+const myComponent = ()=>{
+    console.log("Bye");
+}
+myComponent();
