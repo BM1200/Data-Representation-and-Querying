@@ -1,7 +1,7 @@
 function Header(){
     
     return (
-        <div className="Content">
+        <div>
          <h2>My Header in another component.</h2>
          
         </div>
