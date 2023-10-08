@@ -1,3 +1,4 @@
+//function that returns footer
 function Footer(){
     return(
         <div>
@@ -5,4 +6,5 @@ function Footer(){
         </div>
     );
 }
+//exports this js file
 export default Footer;

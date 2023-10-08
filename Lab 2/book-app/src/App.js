@@ -7,8 +7,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Content from './components/content';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+//imports for browser router, navbar, container, content, footer and header
 function App() {
   return (
+    //underneath you will see a BrowserRouter tag and inside it contains syntax for the navbar
     <BrowserRouter>
     <div className="App">
       <Navbar bg="primary" data-bs-theme="dark">
@@ -21,6 +23,7 @@ function App() {
           </Nav>
         </Container>
       </Navbar>
+      {/* Here are the routes to the different pages */}
       <Routes>
         <Route path='/' element={<Content></Content>}></Route>
         <Route path='header' element={<Header></Header>}></Route>
@@ -36,5 +39,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
+//exports this page to index.html in public folder
 export default App;

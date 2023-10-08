@@ -1,3 +1,4 @@
+//function that returns header
 function Header(){
     
     return (
@@ -7,5 +8,5 @@ function Header(){
         </div>
       );
 }
-
+//exports this js file
 export default Header;
