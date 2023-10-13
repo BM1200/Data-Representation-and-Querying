@@ -1,4 +1,4 @@
-// fuction that returns 'Hello World'
+// fuction that returns content function
 function Content(){
     return(
         <div>

@@ -7,6 +7,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Content from './components/content';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Create from './components/create';
+import Read from './components/read';
+import Books from './components/books';
 //imports for browser router, navbar, container, content, footer and header
 function App() {
   return (
@@ -19,7 +22,9 @@ function App() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="header">Header</Nav.Link>
-            <Nav.Link href="footer">Pricing</Nav.Link>
+            <Nav.Link href="create">Create</Nav.Link>
+            <Nav.Link href="read">Read</Nav.Link>
+            {/*<Nav.Link href="books">Books</Nav.Link>*/}
           </Nav>
         </Container>
       </Navbar>
@@ -27,7 +32,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Content></Content>}></Route>
         <Route path='header' element={<Header></Header>}></Route>
-        <Route path='footer' element={<Footer></Footer>}></Route>
+        <Route path='create' element={<Create></Create>}></Route>
+        <Route path='read' element={<Read></Read>}></Route>
+        {/*<Route path='books' element={<Books></Books>}></Route>*/}
         {/* <Route path='/read' element={<Content></Content>}></Route> */}
       </Routes>
       {/* <Header></Header> 
