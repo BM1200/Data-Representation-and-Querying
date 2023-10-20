@@ -7,10 +7,10 @@ function Create() {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
     const [cover, setCover] = useState('');
-
+    //this is used for saving the submission for new book
     const handleSubmit = (e)=>{
         e.preventDefault();
-
+        //this logs it to the console
         console.log("Title: " + title + " Cover: " + cover 
         + " Author: " + author)
     }
