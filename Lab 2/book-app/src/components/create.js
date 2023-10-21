@@ -26,7 +26,8 @@ function Create() {
                         onChange={(e) => { setTitle(e.target.value) }}
                     />
                 </div>
-                {/*this creates author for book  sets value to author and setAuthor saves it*/}
+                {/*this creates author for book  sets value to author and setAuthor saves it
+                the value gets set to author*/}
                 <div className="form-group">
                     <label>Edit Book Author: </label>
                     <input type="text"

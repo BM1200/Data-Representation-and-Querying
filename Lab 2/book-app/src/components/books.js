@@ -2,6 +2,7 @@
 import BookItem from "./bookitem";
 
 // fuction for books that uses <BookItem> tag to use it
+//this uses a map to return the book data
 function Books(props){
     
     return props.myBooks.map(
