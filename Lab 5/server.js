@@ -3,9 +3,18 @@ const express = require('express')
 const app = express()
 const port = 4000
 
+//this willl allow us to request http
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+
 //requests data from the input of the lname and fname in index.html
 app.get('/name', (req, res)=>{
     res.send('Hello '+ req.query.fname+' '+ req.query.lname)
+})
+app.post('/name', (req, res)=>{
+    res.send('Hello '+ req.body.fname + ' '+ req.body.lname)
 })
 
 //api created in data variable
