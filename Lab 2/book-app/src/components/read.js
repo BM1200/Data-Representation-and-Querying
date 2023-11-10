@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Books from "./books";
 function Read() {
+    
     //variable for books
     // const data = [
     //     {
@@ -45,11 +46,11 @@ function Read() {
     useEffect(
         ()=>{
             //this gets the http from the link
-            axios.get('https://jsonblob.com/api/jsonblob/1161593332966481920')
+            axios.get('http://localhost:4000/api/books')
             .then(
                 //this gets the books from the API, by selecting books it gives me all the data
                 (response)=>{
-                    setData(response.data.books)
+                    setData(response.data.myBooks)
                 }
             )
             //this is forr catching errors, it prints out to the console if error has occured

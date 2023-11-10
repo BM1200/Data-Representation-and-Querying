@@ -1,6 +1,7 @@
 //importing use state
 //function for create
 import { useState } from "react";
+import  axios from "axios";
 
 function Create() {
     //this creates variable for setting title, cover and author
@@ -12,7 +13,13 @@ function Create() {
         e.preventDefault();
         //this logs it to the console
         console.log("Title: " + title + " Cover: " + cover 
-        + " Author: " + author)
+        + " Author: " + author);
+
+        const book = {title:title, cover:cover, author:author}
+        //passing up data to server
+        axios.post('http://localhost:4000/api/book',book)
+        .then()
+        .catch();
     }
     return (
         <div><h3>Hello from Create component</h3>
